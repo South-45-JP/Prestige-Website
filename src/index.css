@@ -1,0 +1,79 @@
+/* Utility classes for gold color */
+.bg-gold {
+  background-color: #FFD700 !important;
+}
+.text-gold {
+  color: #FFD700 !important;
+}
+/* Tailwind CSS directives removed for production build */
+
+* Modern CSS reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/* Enhanced focus management for accessibility */
+.focus-visible-only:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.focus-visible-only:focus-visible {
+  outline: var(--focus-outline-width, 2px) solid var(--focus-outline-color, #005fcc);
+  outline-offset: 2px;
+}
+
+:root {
+  --reduced-motion-duration: 0.01ms;
+  --focus-outline-color: #005fcc;
+  --focus-outline-width: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Fallback for older browsers */
+.reduce-motion * {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  * {
+    print-color-adjust: exact;
+  }
+  
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+  }
+}
+
+@media (prefers-contrast: high) {
+  * {
+    border-color: ButtonText;
+  }
+}
+
+/* Force gold color and Playfair Display font for hero section, with enhanced shadow for luxury effect */
+.hero-gold, .hero-gold * {
+  color: #C9B037 !important; /* Richer, warmer gold */
+  font-family: 'Playfair Display', serif !important;
+  text-shadow: 0 4px 16px #000, 0 2px 4px #333, 0 0 2px #C9B037;
+}

@@ -1,0 +1,35 @@
+.checkout-container {
+    max-width: 700px;
+    margin: auto;
+    padding: 2rem;
+  }
+  
+  .summary-card {
+    background: #111;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.1);
+  }
+  
+  .payment-section {
+    background: #111;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+  }
+  
+  .confirm-btn {
+    background: #FFD700;
+    color: #000;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .confirm-btn:hover {
+    background: #e6c200;
+  }
+  

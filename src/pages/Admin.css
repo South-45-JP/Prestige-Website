@@ -1,0 +1,19 @@
+.admin-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem;
+  }
+  
+  .job-schedule {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .job-card {
+    background: #111;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.1);
+    color: #FFD700;
+  }
+  
