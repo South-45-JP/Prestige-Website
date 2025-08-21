@@ -12,11 +12,9 @@ const ClientLogin = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Demo credentials
-    const demoEmail = "client@prestige.com";
-    const demoPassword = "123clean";
+    const savedAccount = JSON.parse(localStorage.getItem("clientAccount"));
 
-    if (formData.email === demoEmail && formData.password === demoPassword) {
+    if (savedAccount?.email === formData.email && savedAccount?.password === formData.password) {
       localStorage.setItem("clientLoggedIn", "true");
       navigate("/client-dashboard");
     } else {

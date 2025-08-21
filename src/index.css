@@ -1,13 +1,6 @@
-/* Utility classes for gold color */
-.bg-gold {
-  background-color: #FFD700 !important;
-}
-.text-gold {
-  color: #FFD700 !important;
-}
-/* Tailwind CSS directives removed for production build */
+/* Removed Tailwind directives because Tailwind is not configured or supported in the current build process. */
 
-* Modern CSS reset */
+/* Modern CSS reset */
 *,
 *::before,
 *::after {
@@ -29,6 +22,7 @@
   --reduced-motion-duration: 0.01ms;
   --focus-outline-color: #005fcc;
   --focus-outline-width: 2px;
+  --nav-height: 72px; /* navbar height used to offset page content */
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -76,4 +70,48 @@
   color: #C9B037 !important; /* Richer, warmer gold */
   font-family: 'Playfair Display', serif !important;
   text-shadow: 0 4px 16px #000, 0 2px 4px #333, 0 0 2px #C9B037;
+}
+
+/* Global luxury background for entire site */
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background-image: url('/images/luxury-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #000; /* fallback */
+  padding-top: var(--nav-height);
+}
+
+/* Hero logo glow and tagline */
+.hero-logo {
+  filter: drop-shadow(0 10px 30px rgba(0,0,0,0.8));
+  box-shadow: 0 12px 44px rgba(0,0,0,0.7) inset;
+  border-radius: 8px;
+  -webkit-mask-image: linear-gradient(#000, #000);
+  mask-image: linear-gradient(#000, #000);
+  animation: logo-fade 700ms ease both;
+}
+
+.hero-tagline {
+  color: #E9D07A;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-shadow: 0 6px 28px rgba(0,0,0,0.7), 0 2px 8px rgba(201,176,55,0.12);
+}
+
+.feature-cards .card {
+  background: rgba(255,255,255,0.86);
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+@keyframes logo-fade {
+  from { opacity: 0; transform: translateY(-8px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
 }

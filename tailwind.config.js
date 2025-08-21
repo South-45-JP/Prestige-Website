@@ -10,7 +10,9 @@ module.exports = {
         gold: '#C9B037',
       },
       fontFamily: {
-        serif: ['"Playfair Display"', 'serif'],
+        fontFamily: {
+  cinzel: ['Cinzel', 'serif'],
+},
       },
     },
   },

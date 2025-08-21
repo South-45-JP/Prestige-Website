@@ -2,7 +2,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-import App from './App.jsx'
+import App from './App'
 import '../dist/output.css'
 import { AuthProvider } from './Hooks/AuthContext.jsx'
 

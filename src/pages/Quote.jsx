@@ -1,12 +1,10 @@
-// src/pages/Quote.jsx
 import React from 'react';
 
 const Quote = () => (
-  <div className="min-h-screen bg-white text-black p-8 flex flex-col items-center justify-center">
-    <h1 className="text-4xl font-bold text-yellow-600 mb-6">Instant Quote</h1>
-    <p className="text-lg mb-4">Get an instant quote for your cleaning needs. This feature is coming soon!</p>
-    {/* You can add a form or calculator here later */}
-  </div>
+	<div className="min-h-screen flex items-center justify-center bg-black text-gold">
+		<h1 className="text-4xl font-bold">Instant Quote Page</h1>
+		<p className="mt-4">This page will let you get an instant quote for cleaning services.</p>
+	</div>
 );
 
 export default Quote;
